@@ -47,7 +47,23 @@
 .res-logo {
   width: 100%;
 }
+.filter {
+  display: flex;
+}
 .filter-btn {
   margin: 10px;
   cursor: pointer;
+}
+.shimmer {
+  margin: 5px;
+  width: 200px;
+  height: 400px;
+  background: #f0f0f0;
+}
+.shimmerContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.login-btn {
+  padding: 20px;
 }
