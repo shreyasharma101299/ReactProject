@@ -4,7 +4,6 @@ import ItemList from "./ItemList";
 const RestaurantCategory = ({ data, showIndex, showItem }) => {
   const [showItems, setShowItems] = useState(showIndex);
   const handleClick = () => {
-    console.log("clicked");
     showItem();
   };
   return (
@@ -18,7 +17,7 @@ const RestaurantCategory = ({ data, showIndex, showItem }) => {
         </span>
         <span>🔽</span>
       </div>
-      {showIndex && <ItemList item={data.itemCards} />}
+      {showIndex && <ItemList items={data.itemCards} />}
     </div>
   );
 };
